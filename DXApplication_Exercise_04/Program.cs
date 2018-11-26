@@ -17,7 +17,6 @@ namespace DXApplication_Exercise_04
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //-------------
             BonusSkins.Register();
             Application.Run(new FrmMain());
         }
