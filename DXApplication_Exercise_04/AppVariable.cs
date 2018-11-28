@@ -20,6 +20,7 @@ namespace DXApplication_Exercise_04
 {
     class AppVariable
     {
+        // مسیر دایکتوری ذخیره فایل کانفیگ 
         public static string fileName = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
             + @"\" + Assembly.GetExecutingAssembly().GetName().Name;
 

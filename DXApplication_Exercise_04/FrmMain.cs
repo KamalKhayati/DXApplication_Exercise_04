@@ -27,11 +27,14 @@ namespace DXApplication_Exercise_04
 {
     public partial class FrmMain : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        SettingsBag settings { get; } = JsonSettings.Construct<SettingsBag>(AppVariable.fileName + @"\config.json").EnableAutosave().WithEncryption("asdjklasjdkajsd654654").LoadNow();
+        //SettingsBag Settings { get; } = JsonSettings.Construct<SettingsBag>(AppVariable.fileName + @"\config.json").EnableAutosave().WithEncryption("asdjklasjdkajsd654654").LoadNow();
+        SettingsBag Settings { get; } = JsonSettings.Construct<SettingsBag>(AppVariable.fileName + @"\config.json").EnableAutosave().LoadNow();
 
         public FrmMain()
         {
             InitializeComponent();
+
+            #region کدهای مربوط به ارسال گزارشات ارور logify
             LogifyAlert client = LogifyAlert.Instance;
             client.ApiKey = "F7A2405F27594DBFBFB0864884C51E53";
             client.OfflineReportsEnabled = true;
@@ -39,13 +42,47 @@ namespace DXApplication_Exercise_04
             client.OfflineReportsDirectory = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             client.SendOfflineReports();
             client.StartExceptionsHandling();
+            #endregion کدهای مربوط به ارسال گزارشات ارور logify
+
+            #region کدهای مربوط به ذخیره تم های فرم اصلی برنامه 
+
+            DevExpress.XtraBars.Helpers.SkinHelper.InitSkinGallery(skinRibbonGalleryBarItem1, true, true);
+            skinRibbonGalleryBarItem2.GalleryItemClick += new DevExpress.XtraBars.Ribbon.GalleryItemClickEventHandler(skinRibbonGalleryBarItem2_GalleryItemClick);
+
+            try
+            {
+                DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle(Settings[AppVariable.SkinName].ToString() ?? "The Bezier");
+
+            }
+            catch (Exception)
+            {
+
+            }
+
+            #endregion کدهای مربوط به ذخیره تم های فرم اصلی برنامه 
 
         }
 
-        private void ribbonControl1_Click(object sender, EventArgs e)
+
+        private void skinRibbonGalleryBarItem2_GalleryItemClick(object sender, DevExpress.XtraBars.Ribbon.GalleryItemClickEventArgs e)
         {
+            Settings[AppVariable.SkinName] = DevExpress.LookAndFeel.UserLookAndFeel.Default.ActiveSkinName;
 
         }
 
+        private void btnAddUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new FrmUser().ShowDialog();
+        }
+
+        private void btnAddGroup_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new FrmGroup().ShowDialog();
+        }
+
+        private void btnAddSoal_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new FrmQuestion().ShowDialog();
+        }
     }
 }
