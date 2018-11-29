@@ -10,6 +10,7 @@
 namespace DXApplication_Exercise_04
 {
     using System;
+    using System.Configuration;
     using System.Data.Entity;
     using System.Linq;
 
@@ -24,7 +25,8 @@ namespace DXApplication_Exercise_04
         public MyContext()
             : base("name=MyContext")
         {
-            Database.SetInitializer<MyContext>(new DropCreateDatabaseIfModelChanges<MyContext>());
+            //Database.SetInitializer<MyContext>(new DropCreateDatabaseIfModelChanges<MyContext>());
+            Database.SetInitializer<MyContext>(new MigrateDatabaseToLatestVersion<MyContext, Migrations.Configuration>());
         }
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 

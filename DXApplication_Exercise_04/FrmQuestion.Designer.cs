@@ -42,6 +42,7 @@
             this.txtCase2 = new DevExpress.XtraEditors.TextEdit();
             this.txtCase3 = new DevExpress.XtraEditors.TextEdit();
             this.txtCase4 = new DevExpress.XtraEditors.TextEdit();
+            this.txtSerial = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbAnswer.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoal.Properties)).BeginInit();
@@ -52,6 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCase2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCase3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCase4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSerial.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -59,7 +61,7 @@
             this.btnAdd.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Appearance.Options.UseFont = true;
             this.btnAdd.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAdd.ImageOptions.SvgImage")));
-            this.btnAdd.Location = new System.Drawing.Point(43, 463);
+            this.btnAdd.Location = new System.Drawing.Point(45, 508);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(320, 40);
             this.btnAdd.TabIndex = 8;
@@ -68,30 +70,30 @@
             // 
             // cmbAnswer
             // 
-            this.cmbAnswer.Location = new System.Drawing.Point(43, 394);
+            this.cmbAnswer.Location = new System.Drawing.Point(201, 439);
             this.cmbAnswer.Margin = new System.Windows.Forms.Padding(5);
             this.cmbAnswer.Name = "cmbAnswer";
-            this.cmbAnswer.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbAnswer.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.cmbAnswer.Properties.Appearance.Options.UseFont = true;
             this.cmbAnswer.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbAnswer.Properties.Items.AddRange(new object[] {
-            "گزینه 1",
-            "گزینه 2",
-            "گزینه 3",
-            "گزینه 4"});
+            "1",
+            "2",
+            "3",
+            "4"});
             this.cmbAnswer.Properties.MaxLength = 50;
             this.cmbAnswer.Properties.NullText = "جواب صحیح";
             this.cmbAnswer.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbAnswer.Size = new System.Drawing.Size(320, 32);
+            this.cmbAnswer.Size = new System.Drawing.Size(164, 30);
             this.cmbAnswer.TabIndex = 7;
             // 
             // cmbClass
             // 
-            this.cmbClass.Location = new System.Drawing.Point(43, 56);
+            this.cmbClass.Location = new System.Drawing.Point(45, 101);
             this.cmbClass.Margin = new System.Windows.Forms.Padding(5);
             this.cmbClass.Name = "cmbClass";
-            this.cmbClass.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbClass.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.cmbClass.Properties.Appearance.Options.UseFont = true;
             this.cmbClass.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -109,23 +111,25 @@
             this.cmbClass.Properties.MaxLength = 50;
             this.cmbClass.Properties.NullText = "انتخاب کلاس";
             this.cmbClass.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cmbClass.Size = new System.Drawing.Size(320, 32);
+            this.cmbClass.Size = new System.Drawing.Size(320, 30);
             this.cmbClass.TabIndex = 1;
             // 
             // txtSoal
             // 
-            this.txtSoal.Location = new System.Drawing.Point(43, 96);
+            this.txtSoal.Location = new System.Drawing.Point(45, 141);
             this.txtSoal.Name = "txtSoal";
+            this.txtSoal.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtSoal.Properties.Appearance.Options.UseFont = true;
             this.txtSoal.Properties.NullText = "متن سئوال";
             this.txtSoal.Size = new System.Drawing.Size(320, 87);
             this.txtSoal.TabIndex = 2;
             // 
             // cmbGroupName
             // 
-            this.cmbGroupName.Location = new System.Drawing.Point(43, 13);
+            this.cmbGroupName.Location = new System.Drawing.Point(45, 58);
             this.cmbGroupName.Name = "cmbGroupName";
             this.cmbGroupName.Properties.Appearance.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.cmbGroupName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGroupName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.cmbGroupName.Properties.Appearance.Options.UseFont = true;
             this.cmbGroupName.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -152,58 +156,73 @@
             // 
             // txtCase1
             // 
-            this.txtCase1.Location = new System.Drawing.Point(43, 191);
+            this.txtCase1.Location = new System.Drawing.Point(45, 236);
             this.txtCase1.Margin = new System.Windows.Forms.Padding(5);
             this.txtCase1.Name = "txtCase1";
-            this.txtCase1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCase1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCase1.Properties.Appearance.Options.UseFont = true;
             this.txtCase1.Properties.MaxLength = 50;
             this.txtCase1.Properties.NullText = "گزینه 1";
-            this.txtCase1.Size = new System.Drawing.Size(320, 32);
+            this.txtCase1.Size = new System.Drawing.Size(320, 30);
             this.txtCase1.TabIndex = 3;
             // 
             // txtCase2
             // 
-            this.txtCase2.Location = new System.Drawing.Point(43, 233);
+            this.txtCase2.Location = new System.Drawing.Point(45, 278);
             this.txtCase2.Margin = new System.Windows.Forms.Padding(5);
             this.txtCase2.Name = "txtCase2";
-            this.txtCase2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCase2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCase2.Properties.Appearance.Options.UseFont = true;
             this.txtCase2.Properties.MaxLength = 50;
             this.txtCase2.Properties.NullText = "گزینه 2";
-            this.txtCase2.Size = new System.Drawing.Size(320, 32);
+            this.txtCase2.Size = new System.Drawing.Size(320, 30);
             this.txtCase2.TabIndex = 4;
             // 
             // txtCase3
             // 
-            this.txtCase3.Location = new System.Drawing.Point(43, 275);
+            this.txtCase3.Location = new System.Drawing.Point(45, 320);
             this.txtCase3.Margin = new System.Windows.Forms.Padding(5);
             this.txtCase3.Name = "txtCase3";
-            this.txtCase3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCase3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCase3.Properties.Appearance.Options.UseFont = true;
             this.txtCase3.Properties.MaxLength = 50;
             this.txtCase3.Properties.NullText = "گزینه 3";
-            this.txtCase3.Size = new System.Drawing.Size(320, 32);
+            this.txtCase3.Size = new System.Drawing.Size(320, 30);
             this.txtCase3.TabIndex = 5;
             // 
             // txtCase4
             // 
-            this.txtCase4.Location = new System.Drawing.Point(43, 317);
+            this.txtCase4.Location = new System.Drawing.Point(45, 362);
             this.txtCase4.Margin = new System.Windows.Forms.Padding(5);
             this.txtCase4.Name = "txtCase4";
-            this.txtCase4.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCase4.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtCase4.Properties.Appearance.Options.UseFont = true;
             this.txtCase4.Properties.MaxLength = 50;
             this.txtCase4.Properties.NullText = "گزینه 4";
-            this.txtCase4.Size = new System.Drawing.Size(320, 32);
+            this.txtCase4.Size = new System.Drawing.Size(320, 30);
             this.txtCase4.TabIndex = 6;
+            // 
+            // txtSerial
+            // 
+            this.txtSerial.Location = new System.Drawing.Point(201, 14);
+            this.txtSerial.Margin = new System.Windows.Forms.Padding(5);
+            this.txtSerial.Name = "txtSerial";
+            this.txtSerial.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtSerial.Properties.Appearance.Options.UseFont = true;
+            this.txtSerial.Properties.MaxLength = 50;
+            this.txtSerial.Properties.NullText = "سریال";
+            this.txtSerial.Properties.ReadOnly = true;
+            this.txtSerial.Size = new System.Drawing.Size(164, 30);
+            this.txtSerial.TabIndex = 9;
+            this.txtSerial.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
             // 
             // FrmQuestion
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 519);
+            this.ClientSize = new System.Drawing.Size(409, 560);
+            this.Controls.Add(this.txtSerial);
             this.Controls.Add(this.cmbGroupName);
             this.Controls.Add(this.txtSoal);
             this.Controls.Add(this.btnAdd);
@@ -233,23 +252,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtCase2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCase3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCase4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSerial.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private DevExpress.XtraEditors.SimpleButton btnAdd;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbAnswer;
-        private DevExpress.XtraEditors.ComboBoxEdit cmbClass;
-        private DevExpress.XtraEditors.MemoEdit txtSoal;
-        private DevExpress.XtraEditors.LookUpEdit cmbGroupName;
         private DB_EFCF_DXApplication_Exercise_04DataSet dB_EFCF_DXApplication_Exercise_04DataSet;
         private System.Windows.Forms.BindingSource groupsBindingSource;
         private DB_EFCF_DXApplication_Exercise_04DataSetTableAdapters.GroupsTableAdapter groupsTableAdapter;
-        private DevExpress.XtraEditors.TextEdit txtCase1;
-        private DevExpress.XtraEditors.TextEdit txtCase2;
-        private DevExpress.XtraEditors.TextEdit txtCase3;
-        private DevExpress.XtraEditors.TextEdit txtCase4;
+        public DevExpress.XtraEditors.SimpleButton btnAdd;
+        public DevExpress.XtraEditors.ComboBoxEdit cmbAnswer;
+        public DevExpress.XtraEditors.ComboBoxEdit cmbClass;
+        public DevExpress.XtraEditors.MemoEdit txtSoal;
+        public DevExpress.XtraEditors.LookUpEdit cmbGroupName;
+        public DevExpress.XtraEditors.TextEdit txtCase1;
+        public DevExpress.XtraEditors.TextEdit txtCase2;
+        public DevExpress.XtraEditors.TextEdit txtCase3;
+        public DevExpress.XtraEditors.TextEdit txtCase4;
+        public DevExpress.XtraEditors.TextEdit txtSerial;
     }
 }

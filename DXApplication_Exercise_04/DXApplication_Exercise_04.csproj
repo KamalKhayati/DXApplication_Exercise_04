@@ -101,11 +101,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_EFCF_DXApplication_Exercise_04DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmGroup.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmGroup.Designer.cs">
       <DependentUpon>FrmGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListQuestions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListQuestions.Designer.cs">
+      <DependentUpon>FrmListQuestions.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
@@ -121,6 +132,11 @@
     </Compile>
     <Compile Include="Group.cs" />
     <Compile Include="Histor.cs" />
+    <Compile Include="Migrations\201811281710365_InitialCreate.cs" />
+    <Compile Include="Migrations\201811281710365_InitialCreate.Designer.cs">
+      <DependentUpon>201811281710365_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MyContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -147,11 +163,17 @@
     <EmbeddedResource Include="FrmGroup.resx">
       <DependentUpon>FrmGroup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmListQuestions.resx">
+      <DependentUpon>FrmListQuestions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQuestion.resx">
       <DependentUpon>FrmQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811281710365_InitialCreate.resx">
+      <DependentUpon>201811281710365_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -185,6 +207,17 @@
     </None>
     <None Include="DB_EFCF_DXApplication_Exercise_04DataSet.xss">
       <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EFCF_DXApplication_Exercise_04DataSet1.xsc">
+      <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EFCF_DXApplication_Exercise_04DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_EFCF_DXApplication_Exercise_04DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_EFCF_DXApplication_Exercise_04DataSet1.xss">
+      <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

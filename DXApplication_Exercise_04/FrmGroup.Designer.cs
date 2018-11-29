@@ -39,7 +39,7 @@
             this.btnAdd.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Appearance.Options.UseFont = true;
             this.btnAdd.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnAdd.ImageOptions.SvgImage")));
-            this.btnAdd.Location = new System.Drawing.Point(12, 68);
+            this.btnAdd.Location = new System.Drawing.Point(14, 63);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(320, 40);
             this.btnAdd.TabIndex = 3;
@@ -63,7 +63,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(343, 123);
+            this.ClientSize = new System.Drawing.Size(343, 127);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtGroupName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

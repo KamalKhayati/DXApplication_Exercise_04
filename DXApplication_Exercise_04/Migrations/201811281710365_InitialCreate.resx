@@ -117,53 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="DevExpress.Data.v18.2" name="DevExpress.Data.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-  <data name="btnAdd.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAE0BAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
-        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJDaGVjayI+DQogICAgPHBvbHlnb24g
-        cG9pbnRzPSIyNyw1IDExLDIxIDUsMTUgMiwxOCAxMSwyNyAzMCw4ICAiIGZpbGw9IiMwMzlDMjMiIGNs
-        YXNzPSJHcmVlbiIgLz4NCiAgPC9nPg0KPC9zdmc+Cw==
-</value>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAEAO1azW7jRgy+F+g7CDq1QNaKf1CkgbyL1Im3wdpJusoueluMJdoROhqpmlFqP1sPfaR9haX+fy1Ltmyki9ysEfmRwyEpkuOv//6nvltbVHoGl5s2G8v93rksAdNtw2SrseyJ5ZsL+d3bH39QbwxrLX2O6YY+HXIyPpafhHAuFYXrT2AR3rNM3bW5vRQ93bYUYtjK4Pz8V6XfVwAhZMSSJPWjx4RpQfCAjxOb6eAIj9C5bQDl0Tq+0QJU6Y5YwB2iw1i+/vPKcaipE4GafLlZg6ubHL6cj2TpipoEFdKALmWJMGaLgOjyEwdNuDZbaQ4uEPq4cQDploRyiLZxmZI33dH5wN+RkjLGULrHhW21BOwPIxMpRfa9DC0nJkQj3qCxxcbfdWDIsfzetT1HloqSLifU9alqjNwLWM+krQRniZPgni56/X5v2O/1z6SJR4XnwpiBJ1xCz6QHb4H8H2DzaP8FbMw8SrNKo9r4LreASw+u7YArNh9hGW3l1pAlJc+nFBkTtgxPuM9bJoYDWbpD4WRBIfGJjE00YbvwHhi4RIDxQIQAl/kYEFi1JL0gK7CX/zMWiZ6IsSVLc7KeAVuJp7GMP2Vpaq7BiFciNT4xE0MRmYTrQV6SqqSnWnvWv5t4yO5+hx3yvp5249PGTOPm5P0yqpBXj3GNkh8I5x07zOlcsyzpEWluBVi7DqIeZeoTHQ5zZ7PWKI2j7Q8PeJi094m3mPs14trl190C60Em9BTxFp/uI6zF0YVNCIf+SaQMTiJleBIpo6NLuWL8H3CPknv8jw/fL/EErK9Zp3HWmZ7kszk7iZRjJL96n8V2TxATbR9pMA9WgqxYcl70zMh/eSQov5kQUQOR/R7gdlL5YUPYi3oepZ49rHihCiAupHcgxFm+CiKtDnaARKFcAojWq0ydGDVtnpWwe467bGVLm63OiePgqWfa7mhF0sKee/JGa9+FWiGGovOKZjTRNpGEtiUrKLxF0ajp1HS5wLKYLIjvdxPDKpGlLrTFsLGcnJcUE1Fq75jc/x2V5fUtcRErNeIU92VhWgm2CIlCcRde4gumHoQStyK/TWzqWWxbjqzjzhT7WZDMchlLVQpbKNpLKRmskLOL5m90OEkMdnM8Udy2P59tjMc5oLh1zCLEa81R0uYxi5OuHtdhtmGl/V8WKl1tjpTpAbNQmeXmWGkjmIVKV19MQKSflG4iIvkMtY+J7axHTFtFiGSxOU5U5GRRoqXmGPn+LQuVf9NCq7BJy2kVLrXDGJQxBm0xhmWMYVuMURlj1AYjbo6yIPHai4nGsAbrJhIrsRqE4Ra+48TgtPwVmLb9AszKGLO2GG1i+Ki+USq5iySJ9KT0LpTYalTu7r7uKtW/IYksoXGeTcOvfbUNx+9VzyfoaX/TCTVxvynBnDBzifkp7MhlLM8vCldlL+faSuHcoE3urk4+UzB9k+6cGrScO5Ym8OyZuPoTcX+yyPrnLNzhF0Dfh8XyFywLcxVIOfCGpYXVuz3D3Tcl+2yvdE+yD0jxlmQ3Rvs7ku/DJQs3EPsYOzeCO8h/qu4YDgLM3SMcjDToDGnYGdKoE6T8XL/DaKko9f63oTLtLE/OOkPaN/bajbjLY8wGY+ztU+ywCBzLxsJG1UMV48l3owl3zXy7Cjt8txs8HXDXzL6rBGSm5oeNxqvAD5ual0t1Vcn+f029Bm6uUgj/32wMdH83KWhMc8uWduyAuKesRjFJwT/nIIiBTnPlCnNJdIGvdeA8uKX5TKiHJDfWAoxbdu8JxxNXnIO1oLkrLFWplx9cDeR1Vu+d4Dy62AKqaeIW4J795pnUSPSeVqTFLRB+/ESJCLXShJ+QVpsEya9WmgFF5rsGB5ifxh7BciiC8XumkWfYRzd0rxmsiL6JO67tILsPIm929dokK5dYPMJI+fERfdiw1m+/AaPC8PjGKQAA</value>
   </data>
-  <metadata name="usersBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="dB_EFCF_DXApplication_Exercise_04DataSet11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="dB_EFCF_DXApplication_Exercise_04DataSet11.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="usersTableAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 95</value>
-  </metadata>
-  <data name="simpleButton1.ImageOptions.SvgImage" type="DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v18.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFlEZXZFeHByZXNzLkRhdGEudjE4LjIsIFZlcnNpb249MTguMi4z
-        LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUBAAAAHURl
-        dkV4cHJlc3MuVXRpbHMuU3ZnLlN2Z0ltYWdlAQAAAAREYXRhBwICAAAACQMAAAAPAwAAAKkDAAAC77u/
-        PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4NCjxzdmcgeD0iMHB4IiB5PSIwcHgi
-        IHZpZXdCb3g9IjAgMCAzMiAzMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv
-        MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4bWw6c3Bh
-        Y2U9InByZXNlcnZlIiBpZD0iTGF5ZXJfMSI+DQogIDxnIGlkPSJEZWxldGUiPg0KICAgIDxnPg0KICAg
-        ICAgPHBhdGggZD0iTTE4LjgsMTZsNi45LTYuOWMwLjQtMC40LDAuNC0xLDAtMS40bC0xLjQtMS40Yy0w
-        LjQtMC40LTEtMC40LTEuNCwwTDE2LDEzLjJMOS4xLDYuM2MtMC40LTAuNC0xLTAuNC0xLjQsMCAgICBM
-        Ni4zLDcuN2MtMC40LDAuNC0wLjQsMSwwLDEuNGw2LjksNi45bC02LjksNi45Yy0wLjQsMC40LTAuNCwx
-        LDAsMS40bDEuNCwxLjRjMC40LDAuNCwxLDAuNCwxLjQsMGw2LjktNi45bDYuOSw2LjkgICAgYzAuNCww
-        LjQsMSwwLjQsMS40LDBsMS40LTEuNGMwLjQtMC40LDAuNC0xLDAtMS40TDE4LjgsMTZ6IiBmaWxsPSIj
-        RDExQzFDIiBjbGFzcz0iUmVkIiAvPg0KICAgIDwvZz4NCiAgICA8Zz4NCiAgICAgIDxwYXRoIGQ9Ik0x
-        OC44LDE2bDYuOS02LjljMC40LTAuNCwwLjQtMSwwLTEuNGwtMS40LTEuNGMtMC40LTAuNC0xLTAuNC0x
-        LjQsMEwxNiwxMy4yTDkuMSw2LjNjLTAuNC0wLjQtMS0wLjQtMS40LDAgICAgTDYuMyw3LjdjLTAuNCww
-        LjQtMC40LDEsMCwxLjRsNi45LDYuOWwtNi45LDYuOWMtMC40LDAuNC0wLjQsMSwwLDEuNGwxLjQsMS40
-        YzAuNCwwLjQsMSwwLjQsMS40LDBsNi45LTYuOWw2LjksNi45ICAgIGMwLjQsMC40LDEsMC40LDEuNCww
-        bDEuNC0xLjRjMC40LTAuNCwwLjQtMSwwLTEuNEwxOC44LDE2eiIgZmlsbD0iI0QxMUMxQyIgY2xhc3M9
-        IlJlZCIgLz4NCiAgICA8L2c+DQogIDwvZz4NCjwvc3ZnPgs=
-</value>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
   </data>
 </root>

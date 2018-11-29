@@ -20,8 +20,11 @@ namespace DXApplication_Exercise_04
     [Table("Questions")]
     public class Question
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity),Column(Order =1)]
         public int Id { get; set; }
+        [Required]
+        [Column(Order =2)]
+        public int Code { get; set; }
         public int GroupId { get; set; }
         public string Class { get; set; }
         public string QuestionText { get; set; }

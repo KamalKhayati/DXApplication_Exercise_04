@@ -22,6 +22,7 @@ using System.Data.SqlClient;
 using DevExpress.XtraEditors;
 using System.Reflection;
 using System.Xml.Linq;
+using System.Data.Entity;
 
 namespace DXApplication_Exercise_04
 {
@@ -61,6 +62,11 @@ namespace DXApplication_Exercise_04
 
             #endregion کدهای مربوط به ذخیره تم های فرم اصلی برنامه 
 
+            using (var db=new MyContext())
+            {
+                db.Database.Initialize(true);
+            }
+
         }
 
 
@@ -72,7 +78,9 @@ namespace DXApplication_Exercise_04
 
         private void btnAddUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            new FrmUser().ShowDialog();
+            FrmUser f = new FrmUser();
+            f.btnAdd.Text = "جدید";
+           f.ShowDialog();
         }
 
         private void btnAddGroup_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -83,6 +91,20 @@ namespace DXApplication_Exercise_04
         private void btnAddSoal_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new FrmQuestion().ShowDialog();
+        }
+
+        private void btnEditUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmUser f = new FrmUser();
+            f.btnAdd.Text = "ویرایش";
+            f.btnDelete.Visible = true;
+            f.ShowDialog();
+
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new FrmListQuestions().ShowDialog();
         }
     }
 }
