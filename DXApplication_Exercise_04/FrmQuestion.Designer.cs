@@ -35,8 +35,8 @@
             this.cmbClass = new DevExpress.XtraEditors.ComboBoxEdit();
             this.txtSoal = new DevExpress.XtraEditors.MemoEdit();
             this.cmbGroupName = new DevExpress.XtraEditors.LookUpEdit();
-            this.dB_EFCF_DXApplication_Exercise_04DataSet = new DXApplication_Exercise_04.DB_EFCF_DXApplication_Exercise_04DataSet();
             this.groupsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dB_EFCF_DXApplication_Exercise_04DataSet = new DXApplication_Exercise_04.DB_EFCF_DXApplication_Exercise_04DataSet();
             this.groupsTableAdapter = new DXApplication_Exercise_04.DB_EFCF_DXApplication_Exercise_04DataSetTableAdapters.GroupsTableAdapter();
             this.txtCase1 = new DevExpress.XtraEditors.TextEdit();
             this.txtCase2 = new DevExpress.XtraEditors.TextEdit();
@@ -47,8 +47,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbGroupName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EFCF_DXApplication_Exercise_04DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EFCF_DXApplication_Exercise_04DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCase1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCase2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCase3.Properties)).BeginInit();
@@ -140,15 +140,15 @@
             this.cmbGroupName.Size = new System.Drawing.Size(320, 30);
             this.cmbGroupName.TabIndex = 0;
             // 
-            // dB_EFCF_DXApplication_Exercise_04DataSet
-            // 
-            this.dB_EFCF_DXApplication_Exercise_04DataSet.DataSetName = "DB_EFCF_DXApplication_Exercise_04DataSet";
-            this.dB_EFCF_DXApplication_Exercise_04DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // groupsBindingSource
             // 
             this.groupsBindingSource.DataMember = "Groups";
             this.groupsBindingSource.DataSource = this.dB_EFCF_DXApplication_Exercise_04DataSet;
+            // 
+            // dB_EFCF_DXApplication_Exercise_04DataSet
+            // 
+            this.dB_EFCF_DXApplication_Exercise_04DataSet.DataSetName = "DB_EFCF_DXApplication_Exercise_04DataSet";
+            this.dB_EFCF_DXApplication_Exercise_04DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupsTableAdapter
             // 
@@ -218,6 +218,7 @@
             // 
             // FrmQuestion
             // 
+            this.AcceptButton = this.btnAdd;
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -234,7 +235,7 @@
             this.Controls.Add(this.cmbAnswer);
             this.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmQuestion";
@@ -246,8 +247,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbGroupName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dB_EFCF_DXApplication_Exercise_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dB_EFCF_DXApplication_Exercise_04DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCase1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCase2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCase3.Properties)).EndInit();

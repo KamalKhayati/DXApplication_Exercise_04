@@ -106,6 +106,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_EFCF_DXApplication_Exercise_04DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAzmoon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAzmoon.Designer.cs">
+      <DependentUpon>FrmAzmoon.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGroup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +171,9 @@
     <Compile Include="FrmUser.Designer.cs">
       <DependentUpon>FrmUser.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmAzmoon.resx">
+      <DependentUpon>FrmAzmoon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGroup.resx">
       <DependentUpon>FrmGroup.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +232,17 @@
     </None>
     <None Include="DB_EFCF_DXApplication_Exercise_04DataSet1.xss">
       <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EFCF_DXApplication_Exercise_04DataSet2.xsc">
+      <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EFCF_DXApplication_Exercise_04DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_EFCF_DXApplication_Exercise_04DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_EFCF_DXApplication_Exercise_04DataSet2.xss">
+      <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet2.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

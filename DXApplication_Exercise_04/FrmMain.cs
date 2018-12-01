@@ -106,5 +106,14 @@ namespace DXApplication_Exercise_04
         {
             new FrmListQuestions().ShowDialog();
         }
+
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+        }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            new FrmAzmoon().ShowDialog();
+        }
     }
 }
