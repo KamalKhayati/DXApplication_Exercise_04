@@ -198,12 +198,12 @@
             this.groupControl2.Controls.Add(this.lblQNumber);
             this.groupControl2.Controls.Add(this.lblTime);
             this.groupControl2.Controls.Add(this.labelControl1);
+            this.groupControl2.Enabled = false;
             this.groupControl2.Location = new System.Drawing.Point(0, 115);
             this.groupControl2.Name = "groupControl2";
             this.groupControl2.Size = new System.Drawing.Size(1161, 397);
             this.groupControl2.TabIndex = 2;
             this.groupControl2.Text = "آزمون";
-            this.groupControl2.Visible = false;
             // 
             // groupBox1
             // 

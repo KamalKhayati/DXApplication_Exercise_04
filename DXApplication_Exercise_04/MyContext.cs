@@ -10,8 +10,12 @@
 namespace DXApplication_Exercise_04
 {
     using System;
+    using System.Collections.ObjectModel;
     using System.Configuration;
+    using System.Data.Common;
     using System.Data.Entity;
+    using System.Data.Entity.ModelConfiguration.Conventions;
+    using System.Data.SqlClient;
     using System.Linq;
 
     public class MyContext : DbContext
@@ -23,10 +27,12 @@ namespace DXApplication_Exercise_04
         // If you wish to target a different database and/or database provider, modify the 'MyContext' 
         // connection string in the application configuration file.
         public MyContext()
-            : base("name=MyContext")
+                : base("name=MyContext")
+
         {
             //Database.SetInitializer<MyContext>(new DropCreateDatabaseIfModelChanges<MyContext>());
             Database.SetInitializer<MyContext>(new MigrateDatabaseToLatestVersion<MyContext, Migrations.Configuration>());
+            SqlConnection.ClearAllPools();
         }
 
         // Add a DbSet for each entity type that you want to include in your model. For more information 

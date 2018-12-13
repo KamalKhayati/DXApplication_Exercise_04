@@ -215,7 +215,7 @@
             this.btnDelete.Appearance.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.Appearance.Options.UseFont = true;
             this.btnDelete.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
-            this.btnDelete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnDelete.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDelete.ImageOptions.SvgImage")));
             this.btnDelete.Location = new System.Drawing.Point(14, 176);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(149, 40);
@@ -245,6 +245,7 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmUser";
+            this.Load += new System.EventHandler(this.FrmUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtFName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtLName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbClass.Properties)).EndInit();

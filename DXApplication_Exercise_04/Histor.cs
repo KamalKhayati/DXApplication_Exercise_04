@@ -22,7 +22,7 @@ namespace DXApplication_Exercise_04
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public long UserId { get; set; }
+        public int UserId { get; set; }
         public string DatePass { get; set; }
         public string GroupName { get; set; }
         public int TrueItem { get; set; }

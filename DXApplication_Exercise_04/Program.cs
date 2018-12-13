@@ -49,8 +49,9 @@ namespace DXApplication_Exercise_04
                 SkinManager.EnableFormSkins();
                 if (!System.IO.Directory.Exists(AppVariable.fileName))
                     System.IO.Directory.CreateDirectory(AppVariable.fileName);
+                    //Application.Run(new FrmMain());
+                Application.Run(new AppContext());
 
-                Application.Run(new FrmMain());
                 mtx.ReleaseMutex();
             }
             else
@@ -59,5 +60,23 @@ namespace DXApplication_Exercise_04
             }
 
         }
+
+        public class AppContext : ApplicationContext
+        {
+            public AppContext()
+            {
+                Application.Idle += new EventHandler(Application_Idle);
+                new FrmLogin().Show();
+            }
+
+            private void Application_Idle(object sender, EventArgs e)
+            {
+                if (Application.OpenForms.Count == 0)
+                {
+                    Application.Exit();
+                }
+            }
+        }
+
     }
 }

@@ -92,6 +92,7 @@ namespace DXApplication_Exercise_04
                     txtFName.Enabled = txtLName.Enabled = cmbClass.Enabled = true;
                     btnAdd.Text = "ذخیره";
                     btnDelete.Enabled = false;
+                    
                     _index = Convert.ToInt32(gridView1.GetFocusedDataSourceRowIndex());
                     _Id = Convert.ToInt32(gridView1.GetFocusedRowCellValue(gridView1.Columns[0]));
                     gridControl1.Enabled = false;
@@ -201,6 +202,11 @@ namespace DXApplication_Exercise_04
         }
 
         private void gridView1_FocusedRowLoaded(object sender, DevExpress.XtraGrid.Views.Base.RowEventArgs e)
+        {
+
+        }
+
+        private void FrmUser_Load(object sender, EventArgs e)
         {
 
         }

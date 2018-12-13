@@ -22,6 +22,21 @@
     <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
     <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
     <AssemblyInfoFilePath>Properties\AssemblyInfo.cs</AssemblyInfoFilePath>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -55,6 +70,7 @@
     <Reference Include="DevExpress.XtraBars.v18.2" />
     <Reference Include="DevExpress.Sparkline.v18.2.Core" />
     <Reference Include="DevExpress.XtraCharts.v18.2, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.2.Extensions, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraCharts.v18.2.UI, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraCharts.v18.2.Wizard, Version=18.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v18.2" />
@@ -111,6 +127,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DB_EFCF_DXApplication_Exercise_04DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmAzmoon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +150,12 @@
     <Compile Include="FrmListQuestions.Designer.cs">
       <DependentUpon>FrmListQuestions.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +167,12 @@
     </Compile>
     <Compile Include="FrmQuestion.Designer.cs">
       <DependentUpon>FrmQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmResultAzemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmResultAzemon.Designer.cs">
+      <DependentUpon>FrmResultAzemon.cs</DependentUpon>
     </Compile>
     <Compile Include="Group.cs" />
     <Compile Include="Histor.cs" />
@@ -180,11 +213,17 @@
     <EmbeddedResource Include="FrmListQuestions.resx">
       <DependentUpon>FrmListQuestions.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmQuestion.resx">
       <DependentUpon>FrmQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmResultAzemon.resx">
+      <DependentUpon>FrmResultAzemon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811281710365_InitialCreate.resx">
       <DependentUpon>201811281710365_InitialCreate.cs</DependentUpon>
@@ -244,6 +283,17 @@
     <None Include="DB_EFCF_DXApplication_Exercise_04DataSet2.xss">
       <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet2.xsd</DependentUpon>
     </None>
+    <None Include="DB_EFCF_DXApplication_Exercise_04DataSet3.xsc">
+      <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DB_EFCF_DXApplication_Exercise_04DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DB_EFCF_DXApplication_Exercise_04DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DB_EFCF_DXApplication_Exercise_04DataSet3.xss">
+      <DependentUpon>DB_EFCF_DXApplication_Exercise_04DataSet3.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -254,6 +304,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

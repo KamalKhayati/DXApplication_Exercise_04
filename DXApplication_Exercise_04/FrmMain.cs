@@ -62,9 +62,21 @@ namespace DXApplication_Exercise_04
 
             #endregion کدهای مربوط به ذخیره تم های فرم اصلی برنامه 
 
-            using (var db=new MyContext())
+            try
             {
-                db.Database.Initialize(true);
+                using (var db = new MyContext())
+                {
+                    if (!db.Database.Exists())
+                    {
+                        db.Database.Initialize(true);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
             }
 
         }
@@ -80,7 +92,7 @@ namespace DXApplication_Exercise_04
         {
             FrmUser f = new FrmUser();
             f.btnAdd.Text = "جدید";
-           f.ShowDialog();
+            f.ShowDialog();
         }
 
         private void btnAddGroup_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -114,6 +126,95 @@ namespace DXApplication_Exercise_04
         private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             new FrmAzmoon().ShowDialog();
+        }
+
+        private void gridView1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'dB_EFCF_DXApplication_Exercise_04DataSet3.Groups' table. You can move, or remove it, as needed.
+            this.groupsTableAdapter.Fill(this.dB_EFCF_DXApplication_Exercise_04DataSet3.Groups);
+            using (var db = new MyContext())
+            {
+                gridControl1.DataSource = db.Users.Any() ? db.Users.ToList() : null;
+
+            }
+
+        }
+
+        private void lupGroup_EditValueChanged(object sender, EventArgs e)
+        {
+            int uId = Convert.ToInt32(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, gridView1.Columns[0]));
+            string groupName = lupGroup.Text;
+            using (var db = new MyContext())
+            {
+                var q = db.Histores.Where(p => p.UserId == uId && p.GroupName == groupName).Select(p => p.DatePass);
+                LupSelectAzemoon.Properties.DataSource = q.Any() ? q.ToList() : null;
+
+            }
+
+        }
+
+        private void LupSelectAzemoon_EditValueChanged(object sender, EventArgs e)
+        {
+            int uId = Convert.ToInt32(gridView1.GetRowCellValue(gridView1.FocusedRowHandle, gridView1.Columns[0]));
+            string groupName = lupGroup.Text;
+            string date = LupSelectAzemoon.Text;
+
+            using (var db = new MyContext())
+            {
+                var q = db.Histores.Where(p => p.UserId == uId && p.GroupName == groupName && p.DatePass == date);
+                chartControl1.Series[0].Points[0].Values = new double[] { q.Any() ? q.FirstOrDefault().TrueItem : 0 };
+                chartControl1.Series[0].Points[1].Values = new double[] { q.Any() ? q.FirstOrDefault().FalseItem : 0 };
+                chartControl1.Series[0].Points[2].Values = new double[] { q.Any() ? q.FirstOrDefault().NoneItem : 0 };
+                chartControl1.RefreshData();
+            }
+
+
+        }
+
+        private void comboBoxEdit1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBoxEdit1.SelectedIndex)
+            {
+                case 0:
+                    chartControl1.Series[0].ChangeView(DevExpress.XtraCharts.ViewType.Bar);
+                    break;
+                case 1:
+                    chartControl1.Series[0].ChangeView(DevExpress.XtraCharts.ViewType.Bubble);
+                    break;
+                case 2:
+                    chartControl1.Series[0].ChangeView(DevExpress.XtraCharts.ViewType.Line);
+                    break;
+            }
+
+        }
+
+        private void FrmMain_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //if (e.KeyChar=='b')
+            //{
+            //    btnTest.Visible = true;
+            //}
+        }
+
+        private void FrmMain_KeyDown(object sender, KeyEventArgs e)
+        {
+            //if (e.Alt && e.Control && e.Shift && e.KeyCode == Keys.F12)
+            //{
+            //    btnTest.Visible = true;
+            //}
+
+        }
+
+        private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SqlConnection.ClearAllPools();
+            Application.Exit();
+            Application.ExitThread();
         }
     }
 }
